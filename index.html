@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet" >
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Narinder <span>Singh</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#project">About Me</a></li>
+            <li><a href="#journey">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <div class="text-section">
+                <h1>Hi, It's</h1>
+                <div class="neon-text">Narinder Singh</div>
+                <h3>I'm a <span id="dynamic-role">Web Developer</span></h3>
+                <script>document.addEventListener("DOMContentLoaded", () => {
+                    const roles = ["Web Developer", "Web Designer", "Frontend Developer"];
+                    const roleElement = document.getElementById("dynamic-role");
+                    let index = 0;
+                
+                    setInterval(() => {
+                        roleElement.textContent = roles[index];
+                        index = (index + 1) % roles.length; // Loop back to start after last role
+                    }, 2000); // Change role every 2 seconds
+                });
+                </script>
+                
+                <p>As a passionate and innovative web developer, I specialize in transforming ideas into stunning, responsive websites using the latest technologies.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100058473870854"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://github.com/Narinder-Singh00"><i class='bx bxl-github' ></i></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><i class='bx bxl-gmail' ></i></a>
+                    <a href="https://www.instagram.com/narindersingh5338/?hl=en"><i class='bx bxl-instagram' ></i></a>
+                </div>
+                <div class="btn-group fade-in">
+                    <a href="Dedicated student pursuing a B.Tech CSE (AI & ML) at Lamrin Tech Skills University Punjab, with practic.pdf" class="btn">Resume</a>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+                <div class="body-imghover"></div>
+            </div>
+            <div class="image-section">
+                <img src="1.png" alt="Narinder Singh">
+            </div>
+        </div>
+    </section>
+    <!-- About Me Section -->
+    <section class="project" id="project">
+
+        <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+      
+          <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+      
+          <div class="box-container">
+      
+          <div class="box">
+              <div class="image">
+              <img draggable="false" src="image.png" alt="">
+              </div>
+              <div class="content">
+              <span class="date"><i class="fa fa-calendar"></i> 2021 - 2022</span>  
+              <h3>Gsss.School(Boys)Ropar</h3>
+              <p>10+2 Science</p>
+              <h4>GPA:- 85%</h4>
+              </div>
+          </div>
+      
+          <div class="box">
+            <div class="image">
+            <img draggable="false" src="clg.png" alt="">
+            </div>
+            <div class="content">
+            <span class="date"><i class="fa fa-calendar"></i> 2022 - Present</span>
+            <h3>LAMRIN TECH SKILLS UNIVERSITY PUNJAB</h3>
+            <p>B.Tech CSE (AI&ML)</p>
+            <h4>SGPA:-....</h4>
+            </div>
+          </div>
+      
+      </div>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container" >
+            <div class="section-title">
+                <h2>My <span>Skills</span></h2>
+            </div>
+            <div class="skills-content">
+                <div class="coding-skills">
+                    <h3>Coding Skills</h3>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                        <span class="percentage">90%</span>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                        <span class="percentage">80%</span>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%;"></div>
+                        </div>
+                        <span class="percentage">65%</span>
+                    </div>
+                    <div class="skill">
+                        <span>React.js</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                        <span class="percentage">75%</span>
+                    </div>
+                </div>
+                <div class="professional-skills">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Web Design</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                        <span class="percentage">95%</span>
+                    </div>
+                    <div class="skill">
+                        <span>Web Development</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 67%;"></div>
+                        </div>
+                        <span class="percentage">67%</span>
+                    </div>
+                    <div class="skill">
+                        <span>Graphic Design</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                        <span class="percentage">85%</span>
+                    </div>
+                    <div class="skill">
+                        <span>SEO Marketing</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                        <span class="percentage">60%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="journey">
+        <div class="container1">
+            <h2>My <span>Experience</span></h2>
+            <div class="section-title">
+            </div>
+            <div class="journey-content">
+                <img class="ceo" src="project-manager.png" alt="Narinder Singh">
+               
+                <div class="education">
+                    <h3>My Projects</h3>
+                    <div class="timeline">
+                       
+                        
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content">
+                                <span class="date"><i class="fa fa-calendar"></i> 2021 - 2022</span>
+                                <h4>University Canteen Website</h4>
+                                <p>Project Overview:
+                                    Developed a responsive and user-friendly website for the university canteen to streamline the ordering process and provide up-to-date menu information. The project aimed to enhance the dining experience for students and staff by making it easy to browse the menu, place orders, and check nutritional information.t</p>
+                                  <h4>Technologies Used:
+                                    React.js, HTML, CSS, JavaScript, Firebase (for backend and database), and Bootstrap for responsive design.</h4></p>
+                            </div>
+                        
+                       
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content">
+                                <span class="date"><i class="fa fa-calendar"></i> 2022 - Present</span>
+                                <h4>Dynamic Pricing In E-Commerce (Working)</h4>
+                                <p>Project Overview:
+                                    Implemented a dynamic pricing system for an e-commerce platform to optimize pricing strategies based on real-time market conditions, competitor pricing, and customer behavior. The project aimed to increase revenue and enhance customer satisfaction by offering competitive and flexible pricing.</p>
+                                <h4>Technologies Used:
+                                    JavaScript, Python, Node.js, API Integration, Machine Learning (for pricing algorithm), and SQL for database management.
+                                    
+                                    </h4></p>
+                            </div>
+                    
+                        <!-- Repeat for more education items -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    
+    <!-- Contact Section -->
+    <div class="container">
+        <h2>Contact <span>Me</span></h2>
+        <div class="section-title"></div>
+        <div class="container4">
+            <form onsubmit="handleSubmit(event)">
+                <input type="text" name="full_name" placeholder="Full Name">
+                <input type="email" name="email_address" placeholder="Email Address">
+                <input type="text" name="mobile_number" placeholder="Mobile Number">
+                <input type="text" name="email_subject" placeholder="Email Subject">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <script>
+                function handleSubmit(event) {
+                    event.preventDefault(); // Prevents the form from submitting
+                    alert('Form Submitted Successfully!');
+                }
+            </script>
+            
+            
+        </div>
+    </section>
+
+    <!-- HTML -->
+<div class="arrow-button">
+    <a href="#home">
+      <button>&#8679;</button>
+    </a>
+  </div>
+  
+  <!-- Add this in your Home Section -->
+  <section id="home">
+    <!-- Your home section content -->
+  </section>
+  
+
+    <!-- Footer -->
+    <section class="footer">
+
+        <div class="box-container">
+      
+            <div class="box">
+                <h3>Narinder's Portfolio</h3>
+                <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+    
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100058473870854"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://github.com/Narinder-Singh00"><i class='bx bxl-github' ></i></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><i class='bx bxl-gmail' ></i></a>
+                    <a href="https://www.instagram.com/narindersingh5338/?hl=en"><i class='bx bxl-instagram' ></i></a>
+                </div>
+            </div>
+      
+            <div class="box">
+                <h3>contact info</h3>
+                <p> <i class="fas fa-phone"></i>+91 8699410317</p>
+                <p> <i class="fas fa-envelope"></i>narinderkhuttan@gmail.com</p>
+                <p> <i class="fas fa-map-marked-alt"></i>punjab, India-140119</p>
+                
+            </div>
+        </div>
+      
+        <h1 class="credit">Designed with 🚀 <i class="fa fa-heart pulse"></i> by <a href="">Narinder Singh</a></h1>
+      
+    </section>
+    
+
+</body>
+</html>
